@@ -1,0 +1,100 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("leprosorium.ru") {
+
+    /* showmore */
+    .leprapane-showmore{
+        border:1px dotted #ddd;
+        padding: 6px;
+        font-size: 10px;
+        margin: 6px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    /* pane */
+    #leprapane-pane{
+        position: fixed;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+        cursor: default;
+        background-color: #FFFFFF;
+        color: #788288;
+        box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+    }
+    #leprapane-pane-wrapper{
+        display: table;
+        position: relative;
+        border-collapse: collapse;
+    }
+    .leprapane-group{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .leprapane-item{
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3px;
+    }
+    .leprapane-button{
+        width: 16px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .leprapane-filter{
+        cursor: pointer;
+        padding-bottom: 0;
+        position: relative;
+    }
+    .leprapane-title{
+        margin: 3px;
+        display: none;
+    }
+    .leprapane-filter:hover{
+        background: #F7F8FB;
+    }
+    .leprapane-filter:hover .leprapane-title{
+        display: inline-block;
+    }
+    .leprapane-count{
+        margin: 3px;
+        display: inline-block;
+    }
+
+    /* thumbs */
+    #leprapane-thumbs{
+        white-space: nowrap;
+        background: rgba(0,0,0,.3);
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: -100%;
+    }
+    .leprapane-thumbs-item{
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .leprapane-thumbs-item img{
+        vertical-align: middle;
+        border-radius: 100%;
+        box-shadow: 1px 3px rgba(0,0,0,.3) inset;
+    }
+    .leprapane-thumbs-item i{
+        border-radius: 100%;
+        height: 4px;
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        margin-right: -3px;
+        width: 4px;
+        border: 1px solid rgba(255,255,255,.5);
+    }
+
+}
